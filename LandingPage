@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Sign-Up</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+        form { margin: auto; width: 300px; }
+        input, button { width: 100%; padding: 10px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Sign Up for Our Demo</h2>
+    <form id="signupForm">
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <script>
+        document.getElementById("signupForm").onsubmit = function(event) {
+            event.preventDefault(); // Prevent the form from submitting via the browser
+            alert("Demo sign-up feature is not implemented yet."); // Placeholder for actual sign-up logic
+        }
+    </script>
+</body>
+</html>
